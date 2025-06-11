@@ -14,6 +14,7 @@ Este repositorio sigue los módulos oficiales y combina teoría con comandos eje
 - Historia de Linux y filosofía FOSS
 - Licencias y software libre
 - Scripting y automatización
+- Monitorizacion e informacion del sistema
 
 ## 🏁 Objetivo
 Dominar los contenidos de Linux Essentials mediante práctica real, con un enfoque orientado a la administración de sistemas Linux.
