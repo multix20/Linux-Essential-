@@ -17,3 +17,5 @@ Este repositorio sigue los módulos oficiales y combina teoría con comandos eje
 
 ## 🏁 Objetivo
 Dominar los contenidos de Linux Essentials mediante práctica real, con un enfoque orientado a la administración de sistemas Linux.
+
+Para revisar el avance general consulta [PROGRESO.md](PROGRESO.md).
