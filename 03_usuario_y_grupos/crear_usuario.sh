@@ -3,7 +3,7 @@ set -euo pipefail
 
 usage() {
     echo "Uso: $0 [-h|--help]" >&2
-    echo "Muestra un listado de archivos y la ruta actual." >&2
+    echo "Crea el usuario llamado 'ejemplo'." >&2
 }
 
 case "${1:-}" in
@@ -13,7 +13,5 @@ case "${1:-}" in
         ;;
 esac
 
-echo "Listando archivos..."
-ls -la
-pwd
-tree
+# Script de ejemplo para crear un usuario
+sudo adduser ejemplo
