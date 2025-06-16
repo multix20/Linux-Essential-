@@ -1,22 +1,11 @@
-# Linux Essentials - LPI 010-160
+# Programming Quiz
 
-Repositorio personal de estudio práctico de Juan Pablo Monsalve Suazo para la certificación Linux Essentials del LPI.  
-Este repositorio sigue los módulos oficiales y combina teoría con comandos ejecutados en un servidor Ubuntu accesible vía SSH desde Windows.
+Esta rama contiene una pequeña aplicación React desplegable en GitHub Pages.
+El código se transpila en el navegador mediante Babel, por lo que no se
+requiere ninguna herramienta de construcción adicional.
 
-## 🌐 Entorno de práctica
-- Máquina virtual con Ubuntu Server
-- Acceso remoto desde Windows (terminal + Visual Studio Code via SSH)
-- Scripts y comandos ejecutables desde terminal
+## Uso
+1. Clona el repositorio y abre `index.html` en tu navegador.
+2. O bien, publica la rama en GitHub Pages para ejecutarlo en línea.
 
-## 📚 Temario abordado
-- Comandos básicos de Linux
-- Gestión de archivos y usuarios
-- Historia de Linux y filosofía FOSS
-- Licencias y software libre
-- Scripting y automatización
-- Monitorizacion e informacion del sistema
-
-## 🏁 Objetivo
-Dominar los contenidos de Linux Essentials mediante práctica real, con un enfoque orientado a la administración de sistemas Linux.
-
-Para revisar el avance general consulta [PROGRESO.md](PROGRESO.md).
+La aplicación utiliza React, ReactDOM y Tailwind CSS cargados desde CDNs.
