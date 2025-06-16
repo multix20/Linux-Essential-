@@ -1,5 +1,6 @@
 const { useState, useEffect } = React;
 const { createRoot } = ReactDOM;
+const { ChevronLeft, ChevronRight, RotateCcw, CheckCircle, XCircle, Clock, BookOpen } = LucideReact;
 const questions = [
   {
     id: 1,
@@ -247,7 +248,7 @@ function ProgrammingQuizApp() {
             <div className="text-center mb-8">
               <h1 className="text-4xl font-bold text-white mb-2">¡Examen Completado!</h1>
               <div className="flex items-center justify-center gap-2 text-white/80">
-                <span className="w-5 h-5">⏰</span>
+                <Clock className="w-5 h-5" />
                 <span>Tiempo total: {formatTime(timeElapsed)}</span>
               </div>
             </div>
@@ -294,9 +295,9 @@ function ProgrammingQuizApp() {
                   >
                     <div className="flex items-start gap-3">
                       {isCorrect ? (
-                        <span className="w-6 h-6 text-green-400 mt-1 flex-shrink-0">✓</span>
+                        <CheckCircle className="w-6 h-6 text-green-400 mt-1 flex-shrink-0" />
                       ) : (
-                        <span className="w-6 h-6 text-red-400 mt-1 flex-shrink-0">✗</span>
+                        <XCircle className="w-6 h-6 text-red-400 mt-1 flex-shrink-0" />
                       )}
                       <div className="flex-1">
                         <h3 className="text-white font-semibold mb-2">
@@ -330,7 +331,7 @@ function ProgrammingQuizApp() {
                 onClick={resetQuiz}
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
               >
-                <span className="w-5 h-5">↻</span> Intentar de Nuevo
+                <RotateCcw className="w-5 h-5" /> Intentar de Nuevo
               </button>
             </div>
           </div>
@@ -350,12 +351,12 @@ function ProgrammingQuizApp() {
         <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 shadow-2xl border border-white/20 mb-6">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
-              <span className="w-8 h-8 text-white">📖</span>
+              <BookOpen className="w-8 h-8 text-white" />
               <h1 className="text-2xl font-bold text-white">Examen de Programación</h1>
             </div>
             <div className="flex items-center gap-4 text-white/80">
               <div className="flex items-center gap-2">
-                <span className="w-5 h-5">⏰</span>
+                <Clock className="w-5 h-5" />
                 <span className="font-mono">{formatTime(timeElapsed)}</span>
               </div>
               <div className="text-sm">
@@ -423,7 +424,7 @@ function ProgrammingQuizApp() {
               disabled={currentQuestion === 0}
               className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 disabled:bg-white/5 disabled:text-white/40 text-white rounded-xl transition-all duration-200 disabled:cursor-not-allowed"
             >
-              <span className="w-5 h-5">←</span> Anterior
+              <ChevronLeft className="w-5 h-5" /> Anterior
             </button>
 
             <div className="flex gap-2 max-w-md overflow-x-auto">
@@ -450,7 +451,7 @@ function ProgrammingQuizApp() {
                 className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white rounded-xl font-semibold transition-all duration-200 transform hover:scale-105"
               >
                 Finalizar Examen
-                <span className="w-5 h-5">✓</span>
+                <CheckCircle className="w-5 h-5" />
               </button>
             ) : (
               <button
@@ -460,7 +461,7 @@ function ProgrammingQuizApp() {
                 className="flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white rounded-xl transition-all duration-200"
               >
                 Siguiente
-                <span className="w-5 h-5">→</span>
+                <ChevronRight className="w-5 h-5" />
               </button>
             )}
           </div>

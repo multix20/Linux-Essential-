@@ -8,4 +8,5 @@ requiere ninguna herramienta de construcción adicional.
 1. Clona el repositorio y abre `index.html` en tu navegador.
 2. O bien, publica la rama en GitHub Pages para ejecutarlo en línea.
 
-La aplicación utiliza React, ReactDOM y Tailwind CSS cargados desde CDNs.
+La aplicación utiliza React, ReactDOM, Tailwind CSS y los íconos de Lucide
+cargados desde CDNs.
