@@ -1,275 +1,363 @@
-# 🎯 Programming Quiz App
+# 🐧 NDG Linux Essentials Journey
 
 <div align="center">
 
-![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Vite](https://img.shields.io/badge/Vite-6.0.1-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/multix20/Linux-Essential-?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/multix20/Linux-Essential-?style=for-the-badge)
 
-Una aplicación interactiva de examen sobre conceptos básicos de Linux, construida con tecnologías modernas de frontend.
+Mi viaje de aprendizaje en Linux: desde conceptos básicos hasta administración de sistemas
 
-[Demo](#) · [Reportar Bug](#) · [Solicitar Feature](#)
+[📚 Notas](#-módulos-del-curso) · [💻 Scripts](#-scripts-destacados) · [🧪 Labs](#-laboratorios) · [📋 Cheatsheets](#-cheatsheets)
 
 </div>
 
 ---
 
-## 📋 Tabla de Contenidos
+## 📖 Sobre este Repositorio
 
-- [Características](#-características)
-- [Capturas de Pantalla](#-capturas-de-pantalla)
-- [Tecnologías](#-tecnologías)
-- [Instalación](#-instalación)
-- [Uso](#-uso)
-- [Scripts Disponibles](#-scripts-disponibles)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
-- [Personalización](#-personalización)
-- [Roadmap](#-roadmap)
-- [Contribuir](#-contribuir)
-- [Licencia](#-licencia)
+Este repositorio documenta mi experiencia aprendiendo Linux a través del curso **NDG Linux Essentials** de Cisco Networking Academy. Aquí encontrarás:
 
----
+- 📝 Notas detalladas de cada módulo del curso
+- 💻 Scripts de automatización y administración de sistemas
+- 🧪 Soluciones de laboratorios y desafíos personales
+- 📋 Cheatsheets y guías de referencia rápida
+- 🎓 Mi progreso hacia certificaciones profesionales
 
-## ✨ Características
+## 🎯 Objetivos de Aprendizaje
 
-- ✅ **Interfaz Responsiva**: Diseño adaptable a todos los dispositivos con Tailwind CSS
-- ⏱️ **Temporizador Inteligente**: Contador regresivo por examen con alertas visuales
-- 📊 **Barra de Progreso**: Visualización en tiempo real del avance del examen
-- 🔄 **Navegación Fluida**: Navega entre preguntas y revisa tus respuestas
-- 🎲 **Preguntas Aleatorias**: Cada examen presenta las preguntas en orden diferente
-- 📈 **Sistema de Calificación**: Retroalimentación inmediata con análisis de resultados
-- 🎨 **UI Moderna**: Interfaz limpia y profesional con animaciones suaves
-- ♿ **Accesible**: Diseño pensado en la experiencia de todos los usuarios
+- ✅ Dominar la línea de comandos de Linux
+- ✅ Comprender el sistema de archivos y permisos
+- ✅ Gestionar usuarios, grupos y procesos
+- ✅ Automatizar tareas con bash scripting
+- ✅ Administrar servicios y redes básicas
+- 🔄 Preparación para RHCSA (Red Hat Certified System Administrator)
 
----
+## 📚 Módulos del Curso
 
-## 📸 Capturas de Pantalla
+### ✅ Completados
 
-```
-[Aquí irían las capturas de pantalla de tu aplicación]
-```
+| Módulo | Tema | Fecha | Notas | Lab |
+|--------|------|-------|-------|-----|
+| 08 | File Permissions | Oct 2025 | [📝 Ver notas](module-08-notes.md) | [🧪 Lab 08](labs/lab-08-solutions.md) |
+| 09 | Process Management | Oct 2025 | [📝 Ver notas](module-09-notes.md) | [🧪 Lab 09](labs/lab-09-solutions.md) |
 
----
+### 🔄 En Progreso
 
-## 🛠️ Tecnologías
+| Módulo | Tema | Estado |
+|--------|------|--------|
+| 10 | Networking Basics | 🔄 En progreso |
 
-Este proyecto está construido con:
+### ⏳ Pendientes
 
-| Tecnología | Versión | Propósito |
-|-----------|---------|-----------|
-| **React** | 18.3.1 | Biblioteca UI |
-| **Vite** | 6.0.1 | Build tool y dev server |
-| **Tailwind CSS** | 3.4.17 | Framework de estilos |
-| **PostCSS** | 8.4.49 | Procesador CSS |
-| **ESLint** | 9.17.0 | Linter de código |
+- Module 11: System Administration
+- Module 12: Security Fundamentals
+- Module 13: Advanced Shell Scripting
+- Module 14: Final Project
 
----
+## 💻 Scripts Destacados
 
-## 🚀 Instalación
-
-### Prerrequisitos
-
-- Node.js >= 16.0.0
-- npm o yarn
-
-### Pasos
-
-1. **Clonar el repositorio**
-   ```bash
-   git clone https://github.com/tu-usuario/programming-quiz-app.git
-   cd programming-quiz-app
-   ```
-
-2. **Instalar dependencias**
-   ```bash
-   npm install
-   ```
-
-3. **Iniciar servidor de desarrollo**
-   ```bash
-   npm run dev
-   ```
-
-4. **Abrir en el navegador**
-   
-   Visita [http://localhost:5173](http://localhost:5173)
-
----
-
-## 💻 Uso
-
-### Modo Desarrollo
-
+### 🔍 System Health Check
 ```bash
-npm run dev
+./scripts/monitoring/system-health-check.sh
 ```
+Script completo de verificación del estado del sistema con alertas configurables.
 
-El servidor se recargará automáticamente cuando hagas cambios en el código.
+**Características:**
+- Monitoreo de CPU, RAM, Disco
+- Verificación de servicios críticos
+- Análisis de procesos top
+- Estado de red y conexiones
+- Alertas con umbrales personalizables
+- Reporte con colores y formato profesional
 
-### Build de Producción
+[📄 Ver código completo](scripts/monitoring/system-health-check.sh)
 
+### 💾 Backup Automation Script
 ```bash
-npm run build
+./scripts/backup/backup-script.sh
 ```
+Sistema de respaldo automático con compresión y rotación.
 
-Los archivos optimizados se generarán en la carpeta `dist/`.
+**Características:**
+- Respaldo incremental y completo
+- Compresión con tar + gzip
+- Rotación automática de backups antiguos
+- Logs detallados de ejecución
+- Notificaciones por email (opcional)
 
-### Previsualizar Build
+[📄 Ver código](scripts/backup/)
 
+### 👥 User Management Script
 ```bash
-npm run preview
+./scripts/user-management/user-management.sh
+```
+Automatización de gestión de usuarios y grupos.
+
+**Características:**
+- Creación masiva desde CSV
+- Asignación automática de grupos
+- Configuración de home directories
+- Generación de contraseñas seguras
+- Configuración de permisos por defecto
+
+[📄 Ver código](scripts/user-management/)
+
+### 📊 Log Analyzer
+```bash
+./scripts/monitoring/log-analyzer.sh
+```
+Análisis y generación de reportes de logs del sistema.
+
+**Características:**
+- Parse de múltiples formatos de log
+- Detección de errores críticos
+- Estadísticas de uso del sistema
+- Reportes exportables en HTML
+- Alertas configurables por patrón
+
+[📄 Ver código](scripts/monitoring/)
+
+## 🧪 Laboratorios
+
+### Labs Oficiales NDG
+- [Lab 08: File Permissions Challenge](labs/lab-08-solutions.md) ✅
+- [Lab 09: Process Management Exercise](labs/lab-09-solutions.md) ✅
+- [Lab 10: Network Configuration](labs/lab-10-solutions.md) 🔄
+
+### Challenge Labs (Auto-impuestos)
+
+Desafíos adicionales para profundizar el aprendizaje:
+
+- [🏆 Challenge 01: Secure Server Setup](labs/challenge-labs/challenge-01-secure-server.md)
+  - Hardening de servidor desde cero
+  - Configuración de firewall y SSH
+  - Implementación de fail2ban
+  
+- [🏆 Challenge 02: Automated Deployment](labs/challenge-labs/challenge-02-auto-deployment.md)
+  - Deploy automático de aplicaciones
+  - Scripts de configuración
+  - Verificación post-deployment
+  
+- [🏆 Challenge 03: Disaster Recovery](labs/challenge-labs/challenge-03-disaster-recovery.md)
+  - Plan de recuperación
+  - Backup y restore procedures
+  - Testing de recuperación
+
+## 📋 Cheatsheets
+
+Guías de referencia rápida para consulta diaria:
+
+| Cheatsheet | Descripción |
+|-----------|-------------|
+| [📁 File Permissions](cheatsheets/file-permissions.md) | chmod, chown, umask, ACLs |
+| [⌨️ Common Commands](cheatsheets/common-commands.md) | Los comandos más usados diariamente |
+| [🔧 Systemd Services](cheatsheets/systemd-services.md) | Gestión de servicios con systemctl |
+| [🌐 Networking](cheatsheets/networking-commands.md) | ip, ss, netstat, ping, traceroute |
+| [🔐 Security](cheatsheets/security-practices.md) | Best practices de seguridad |
+| [📝 Vim Reference](cheatsheets/vim-reference.md) | Comandos esenciales de Vim |
+| [🔄 Bash Scripting](cheatsheets/bash-scripting.md) | Sintaxis y patrones comunes |
+
+## 🎓 Progreso y Certificaciones
+
+### 📊 Estado Actual
+
+```
+Progreso del Curso:  ████████░░░░░░░░ 57% (8/14 módulos)
+Labs Completados:    ███████████░░░░░ 75% (15/20 labs)
+Scripts Creados:     ████████████████ 20 scripts funcionales
 ```
 
-Previsualiza la versión de producción localmente antes de desplegar.
+**Última actualización:** Octubre 26, 2025
 
----
+### 🏅 Certificaciones
 
-## 📜 Scripts Disponibles
+- [ ] NDG Linux Essentials (En progreso - 57%)
+- [ ] NDG Linux Unhatched (Próximo - 2025)
+- [ ] Red Hat Certified System Administrator (RHCSA) - Objetivo 2026
 
-| Script | Descripción |
-|--------|-------------|
-| `npm run dev` | Inicia el servidor de desarrollo con hot reload |
-| `npm run build` | Genera el build optimizado para producción |
-| `npm run preview` | Previsualiza el build de producción |
-| `npm run lint` | Ejecuta ESLint para revisar el código |
+## 🛠️ Tecnologías y Herramientas
 
----
+**Sistemas Operativos:**
+- Ubuntu 22.04 LTS
+- Rocky Linux 9.x
+- Debian 12
 
-## 📁 Estructura del Proyecto
+**Herramientas principales:**
+- Bash scripting
+- Vim/Nano
+- Git & GitHub
+- SSH & SCP
+- Cron & Systemd
+- Docker (básico)
+
+**Entorno de Práctica:**
+- VirtualBox / VMware
+- Homelab personal
+- Cloud VMs (AWS/DigitalOcean)
+
+## 💡 Lecciones Aprendidas
+
+### Top 5 Conceptos que Transformaron mi Perspectiva
+
+1. **"Everything is a file"** - La filosofía Unix que simplifica la administración
+2. **Pipes y redirección** - El poder de combinar comandos simples para tareas complejas
+3. **Principio de menor privilegio** - Seguridad desde el diseño
+4. **Automatización > Repetición** - Un script bien hecho ahorra incontables horas
+5. **Los logs nunca mienten** - La importancia del troubleshooting basado en evidencia
+
+### Errores Comunes (y cómo los resolví)
+
+| Error | Solución Implementada |
+|-------|----------------------|
+| No leer man pages | Ahora `man comando` es mi primer paso |
+| Usar `rm -rf` sin verificar | Alias con confirmación: `alias rm='rm -i'` |
+| No hacer backups | Scripts automáticos cada 6 horas |
+| Trabajar siempre como root | sudo solo cuando es necesario |
+| No documentar cambios | Sistema de changelog en todos los scripts |
+
+## 📝 Blog y Artículos
+
+Documentando mi experiencia de aprendizaje:
+
+1. **[Mi transición de Educación a SysAdmin Linux](#)** - Próximamente
+2. **[Lo que aprendí en mis primeros 2 meses con Linux](#)** - Próximamente
+3. **[Cómo monté mi laboratorio casero de infraestructura](#)** - Próximamente
+4. **[Bash scripting: De novato a automatizador](#)** - Próximamente
+5. **[Mi ruta hacia la certificación RHCSA](#)** - Próximamente
+
+**Objetivo:** 2 artículos por mes
+
+## 🎯 Próximos Pasos
+
+### Esta Semana
+- [ ] Completar Módulo 10: Networking Basics
+- [ ] Crear script de monitoreo de red
+- [ ] Documentar lab de configuración LAMP stack
+- [ ] Escribir primer artículo del blog
+
+### Este Mes
+- [ ] Finalizar módulos 11-14
+- [ ] Crear 5 scripts adicionales de automatización
+- [ ] Completar todos los challenge labs
+- [ ] Preparar para examen de certificación
+
+### Este Año
+- [ ] Obtener certificación NDG Linux Essentials
+- [ ] Construir homelab completo documentado
+- [ ] Crear portafolio profesional en GitHub
+- [ ] Comenzar preparación para RHCSA
+
+## 📚 Recursos Complementarios
+
+### Libros
+- "The Linux Command Line" - William Shotts
+- "UNIX and Linux System Administration Handbook" - Evi Nemeth
+- "How Linux Works" - Brian Ward
+
+### Cursos Online
+- Linux Foundation LFS101x
+- Red Hat System Administration I (RH124)
+- Bash Scripting on Udemy
+
+### Comunidades
+- r/linuxadmin
+- r/sysadmin  
+- Linux.org forums
+- Discord: Linux & Open Source
+
+## 📊 Estructura del Repositorio
 
 ```
-programming-quiz-app/
-├── src/
-│   ├── App.jsx              # Componente principal con lógica del quiz
-│   ├── main.jsx             # Punto de entrada de la aplicación
-│   └── index.css            # Estilos globales y directivas de Tailwind
-├── public/                  # Archivos estáticos
-├── index.html               # HTML principal
-├── vite.config.js          # Configuración de Vite
-├── tailwind.config.js      # Configuración de Tailwind CSS
-├── postcss.config.js       # Configuración de PostCSS
-├── package.json            # Dependencias y scripts
-└── README.md               # Este archivo
+Linux-Essential-/
+├── README.md                    # Este archivo
+├── .gitignore                   # Archivos ignorados por Git
+├── module-01-notes.md          # Notas de cada módulo
+├── module-02-notes.md
+├── ...
+├── module-08-notes.md          ✅
+├── module-09-notes.md          ✅
+├── scripts/                     # Scripts organizados por categoría
+│   ├── README.md
+│   ├── backup/
+│   │   └── backup-script.sh
+│   ├── monitoring/
+│   │   ├── system-health-check.sh ✅
+│   │   └── log-analyzer.sh
+│   ├── user-management/
+│   │   └── user-management.sh
+│   ├── security/
+│   │   └── hardening-script.sh
+│   ├── automation/
+│   │   └── task-scheduler.sh
+│   └── networking/
+│       └── network-monitor.sh
+├── labs/                        # Soluciones de laboratorios
+│   ├── README.md
+│   ├── lab-01-solutions.md
+│   ├── ...
+│   ├── lab-08-solutions.md     ✅
+│   ├── lab-09-solutions.md     ✅
+│   └── challenge-labs/
+│       ├── challenge-01-secure-server.md
+│       ├── challenge-02-auto-deployment.md
+│       └── challenge-03-disaster-recovery.md
+├── cheatsheets/                 # Guías de referencia rápida
+│   ├── README.md
+│   ├── file-permissions.md
+│   ├── common-commands.md
+│   ├── systemd-services.md
+│   ├── networking-commands.md
+│   ├── security-practices.md
+│   ├── vim-reference.md
+│   └── bash-scripting.md
+├── resources/                   # Recursos adicionales
+│   ├── diagrams/               # Diagramas y esquemas
+│   ├── screenshots/            # Capturas de pantalla
+│   └── certificates/           # Certificaciones obtenidas
+└── docs/                        # Documentación adicional
+    ├── setup-guides/           # Guías de instalación
+    └── troubleshooting/        # Guías de solución de problemas
 ```
 
-### Archivos Clave
+## 🤝 Contribuciones
 
-- **`src/App.jsx`**: Contiene el componente `ProgrammingQuizApp` con toda la lógica del quiz, estado, y renderizado de la UI.
-- **`src/index.css`**: Incluye las directivas de Tailwind (`@tailwind base`, `@tailwind components`, `@tailwind utilities`).
-- **`vite.config.js`**: Configuración del bundler y servidor de desarrollo.
-- **`tailwind.config.js`**: Personalización del framework CSS (colores, fuentes, etc.).
+Si encuentras errores en mis notas o tienes sugerencias para mejorar los scripts:
 
----
+1. Abre un [Issue](https://github.com/multix20/Linux-Essential-/issues)
+2. Envía un Pull Request
+3. Comparte feedback constructivo
 
-## 🎨 Personalización
+Toda colaboración es bienvenida para mejorar este recurso de aprendizaje.
 
-### Agregar o Modificar Preguntas
+## 📞 Conecta Conmigo
 
-Las preguntas están definidas en `src/App.jsx` en la constante `questions`:
-
-```javascript
-const questions = [
-  {
-    id: 1,
-    question: "¿Qué comando se utiliza para listar archivos en Linux?",
-    options: ["ls", "dir", "list", "show"],
-    correctAnswer: 0
-  },
-  // Agrega más preguntas aquí...
-];
-```
-
-**Formato de cada pregunta:**
-- `id`: Identificador único
-- `question`: Texto de la pregunta
-- `options`: Array con las opciones de respuesta
-- `correctAnswer`: Índice de la opción correcta (comenzando en 0)
-
-### Personalizar Colores y Estilos
-
-Edita `tailwind.config.js` para modificar el tema:
-
-```javascript
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        primary: '#3b82f6',
-        secondary: '#8b5cf6',
-        // Tus colores personalizados...
-      }
-    }
-  }
-}
-```
-
-### Ajustar el Temporizador
-
-En `src/App.jsx`, busca la inicialización del estado del tiempo:
-
-```javascript
-const [timeLeft, setTimeLeft] = useState(600); // 600 segundos = 10 minutos
-```
-
-Cambia el valor para ajustar la duración del examen.
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Sistema de categorías de preguntas (Linux, Redes, Programación, etc.)
-- [ ] Niveles de dificultad (Básico, Intermedio, Avanzado)
-- [ ] Guardar historial de exámenes en localStorage
-- [ ] Modo de práctica sin límite de tiempo
-- [ ] Exportar resultados a PDF
-- [ ] Tema oscuro/claro
-- [ ] Soporte multi-idioma (i18n)
-- [ ] Sistema de logros y badges
-- [ ] Estadísticas detalladas de rendimiento
-- [ ] API para cargar preguntas dinámicamente
-
----
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Para cambios importantes:
-
-1. Fork el proyecto
-2. Crea tu rama de feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
----
+- **GitHub:** [@multix20](https://github.com/multix20)
+- **LinkedIn:** [Tu Perfil](#) <!-- Agregar tu LinkedIn -->
+- **Blog Personal:** [Tu Blog](#) <!-- Agregar cuando esté disponible -->
+- **Email:** [tu-email@example.com](#) <!-- Agregar tu email -->
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
-
----
-
-## 👤 Autor
-
-**Tu Nombre**
-
-- GitHub: [@tu-usuario](https://github.com/tu-usuario)
-- LinkedIn: [tu-perfil](https://linkedin.com/in/tu-perfil)
-
----
-
-## 🙏 Agradecimientos
-
-- [React Documentation](https://react.dev/)
-- [Vite Guide](https://vitejs.dev/guide/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- Inspiración y recursos de la comunidad open source
+Este proyecto está bajo la Licencia MIT. Los scripts y documentación pueden ser usados y modificados libremente con atribución.
 
 ---
 
 <div align="center">
 
-**⭐ Si este proyecto te fue útil, considera darle una estrella ⭐**
+### ⭐ Si este repositorio te ayuda en tu aprendizaje de Linux, considera darle una estrella ⭐
 
-Hecho con ❤️ y ☕
+**Hecho con ❤️ y mucho ☕ mientras aprendo Linux**
+
+*"The only way to learn a new programming language is by writing programs in it."*  
+— Dennis Ritchie
 
 </div>
+
+---
+
+## 🔖 Tags
+
+`#Linux` `#Bash` `#SysAdmin` `#DevOps` `#Learning` `#NDG` `#CiscoNetAcad` `#OpenSource` `#Automation` `#CommandLine`
