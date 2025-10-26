@@ -1,0 +1,32 @@
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+temp/
+
+# Sensitive data
+*.key
+*.pem
+*.crt
+secrets/
+credentials.txt
+passwords.txt
+
+# Backup files
+*.bak
+backup/
+*.sql
+*.dump
+
+# Editor
+.vscode/
+.idea/
+*~
